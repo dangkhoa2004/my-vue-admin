@@ -1,8 +1,7 @@
 <template>
     <div class="qr-login">
-        <h3>Đăng Nhập Bằng QR Code</h3>
+        <h3>{{ $t('message.signin_qrcode') }}</h3>
         <div id="qr-code"></div>
-        <p>Quét mã QR để đăng nhập.</p>
     </div>
 </template>
 

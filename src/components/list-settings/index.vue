@@ -1,38 +1,40 @@
 <template>
-    <div class="jobs-container">
-        <div class="jobs-header">
-            <h2>Trang chủ / lịch Trình</h2>
-            <div class="jobs-search-bar">
-                <input type="text" placeholder="Tìm kiếm">
-            </div>
-        </div>
-        <div class="jobs-filters">
-            <button class="jobs-filter jobs-active">Tất cả</button>
-            <button class="jobs-filter">Hoàn thành</button>
-            <button class="jobs-filter">Chưa hoàn thành</button>
-        </div>
-        <div class="jobs-project-list">
-            <div class="jobs-project-card">
-                <div class="jobs-project-info">
-                    <h3>Dự án Kimshen</h3>
-                    <p>Status: <span class="jobs-status jobs-incomplete">Chưa hoàn thành</span></p>
-                </div>
-                <div class="jobs-project-meta">
-                    <span class="jobs-date">30/10/2019</span>
-                    <span class="jobs-priority jobs-low">Thấp</span>
-                </div>
-            </div>
-            <div class="jobs-project-card">
-                <div class="jobs-project-info">
-                    <h3>Dự án Thăng Long</h3>
-                    <p>Status: <span class="jobs-status jobs-complete">Hoàn thành</span></p>
-                </div>
-                <div class="jobs-project-meta">
-                    <span class="jobs-date">30/09/2019</span>
-                    <span class="jobs-priority jobs-high">Cao</span>
-                </div>
-            </div>
+    <div class="language-switcher">
+        <div class="button-container">
+            <button class="chang-language-btn" @click="changeLanguage('vi')"
+                :class="{ active: currentLanguage === 'vi' }">{{ $t('message.vi_lang') }}
+            </button>
+            <button class="chang-language-btn" @click="changeLanguage('en')"
+                :class="{ active: currentLanguage === 'en' }">{{ $t('message.en_lang') }}
+            </button>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            currentLanguage: 'vi',
+        };
+    },
+    mounted() {
+        const savedLanguage = localStorage.getItem('language');
+        if (savedLanguage) {
+            this.$i18n.locale = savedLanguage;
+            this.currentLanguage = savedLanguage;
+        } else {
+            this.currentLanguage = 'vi';
+        }
+    },
+    methods: {
+        changeLanguage(lang) {
+            this.$i18n.locale = lang;
+            localStorage.setItem('language', lang);
+            this.currentLanguage = lang;
+        },
+    },
+};
+</script>
+
 <style src="./assets/styles.css"></style>

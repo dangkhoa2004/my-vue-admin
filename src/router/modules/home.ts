@@ -22,6 +22,14 @@ const homeRoutes: RouteRecordRaw[] = [
         },
       },
       {
+        path: "test",
+        name: "test",
+        components: {
+          default: () => import("@/views/home/index.vue"),
+          listJob: () => import("@/components/test.vue"),
+        },
+      },
+      {
         path: "cong-viec",
         name: "cong-viec",
         components: {

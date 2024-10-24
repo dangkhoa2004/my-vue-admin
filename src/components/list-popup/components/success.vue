@@ -7,7 +7,7 @@
         </div>
         <div class="shadow scale"></div>
         <div class="message">
-            <h1 class="alert">Thành công !</h1>
+            <h1 class="alert">{{ $t('message.done') }} !</h1>
         </div>
     </div>
 </template>

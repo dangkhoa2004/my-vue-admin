@@ -10,7 +10,7 @@ const authRoutes: RouteRecordRaw[] = [
     path: '/dang-xuat',
     name: 'Logout',
     beforeEnter: (to, _from, next) => {
-      localStorage.clear();
+      localStorage.removeItem('authToken');
       next('/dang-nhap');
     },
     component: () => import('@/views/login/index.vue'),

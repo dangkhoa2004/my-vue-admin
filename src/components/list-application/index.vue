@@ -1,23 +1,24 @@
 <template>
     <div class="all-settings">
         <div class="setting-for-infomation">
-            <h3>Cài đặt ứng dụng:</h3>
-            
+            <h3>{{ $t('message.appsetting') }}:</h3>
+            <listSetting />
         </div>
         <div class="setting-for-status">
-            <h3>Cài đặt trạng thái:</h3>
-            <testComponent />
+            <h3>{{ $t('message.statussetting') }}:</h3>
+            <listPopup />
         </div>
     </div>
 </template>
 
 <script lang="ts">
-import testComponent from '../list-popup/index.vue';
+import listPopup from '../list-popup/index.vue';
+import listSetting from '../list-settings/index.vue';
 
 export default {
     name: "ChatApp",
     components: {
-        testComponent
+        listPopup, listSetting
     }
 };
 </script>

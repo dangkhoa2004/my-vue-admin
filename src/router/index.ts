@@ -19,7 +19,6 @@ const router = createRouter({
   routes,
 });
 
-// Middleware để xử lý trước khi chuyển hướng
 router.beforeEach((to, from, next) => {
   NProgress.start();
   const userInfo = storageLocal().getItem("userInfo");

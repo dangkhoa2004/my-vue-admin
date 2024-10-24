@@ -1,10 +1,8 @@
 <template>
     <div class="message-list-app">
-        <!-- Thanh tìm kiếm -->
         <div class="message-list-header">
-            <h1 class="message-list-header-title">Trò chuyện</h1>
+            <h1 class="message-list-header-title">{{ $t('message.message') }}</h1>
         </div>
-        <!-- Danh sách trò chuyện -->
         <div class="message-list-chat-list">
             <div class="message-list-chat-item">
                 <img src="https://i.pravatar.cc/150?img=1" class="message-list-avatar" alt="Avatar" />

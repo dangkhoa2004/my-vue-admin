@@ -1,15 +1,15 @@
 <template>
     <div class="login-container">
-        <h2>Đăng Nhập</h2>
+        <h2>{{ $t('message.login') }}</h2>
         <div class="container-with-divider">
             <form @submit.prevent="handleLogin">
                 <InputField label="Tên đăng nhập" id="username" v-model="username" placeholder="Nhập tên đăng nhập" />
                 <InputField label="Mật khẩu" id="password" type="password" v-model="password"
                     placeholder="Nhập mật khẩu" />
-                <button type="submit">Đăng Nhập</button>
+                <button type="submit">{{ $t('message.login') }}</button>
                 <ErrorMessage :message="errorMessage" />
             </form>
-            <div class="divider"></div> <!-- Đường kẻ phân chia -->
+            <div class="divider"></div>
             <div class="alternative-login">
                 <QrLogin />
                 <LinkLogin />
@@ -21,7 +21,7 @@
 
 <script lang="ts">
 import { ref } from 'vue';
-import { setToken, storageLocal } from '@/utils/auth'; // Import storageLocal
+import { setToken, storageLocal } from '@/utils/auth';
 import { mockLogin } from '@/utils/mockApi';
 import InputField from './components/InputField.vue';
 import ErrorMessage from './components/ErrorMessage.vue';

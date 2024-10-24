@@ -14,46 +14,46 @@
             </div>
             <div class="sidebar__content">
                 <div>
-                    <h3 class="sidebar__title">TRANG CHỦ</h3>
+                    <h3 class="sidebar__title">{{ $t('message.home') }}</h3>
 
                     <div class="sidebar__list">
                         <router-link to="/trang-chu/cong-viec" class="sidebar__link" active-class="active-link">
                             <i class="ri-briefcase-4-fill"></i>
-                            <span>Công việc</span>
+                            <span>{{ $t('message.job') }}</span>
                         </router-link>
                         <router-link to="/trang-chu/lich-trinh" class="sidebar__link" active-class="active-link">
                             <i class="ri-calendar-line"></i>
-                            <span>Lịch trình</span>
+                            <span>{{ $t('message.schedual') }}</span>
                         </router-link>
                         <router-link to="/trang-chu/cham-cong" class="sidebar__link" active-class="active-link">
                             <i class="ri-time-fill"></i>
-                            <span>Chấm công</span>
+                            <span>{{ $t('message.timeset') }}</span>
                         </router-link>
                     </div>
                 </div>
                 <div>
-                    <h3 class="sidebar__title">TIN NHẮN</h3>
+                    <h3 class="sidebar__title">{{ $t('message.message') }}</h3>
                     <div class="sidebar__list">
                         <router-link to="/trang-chu/tin-nhan" class="sidebar__link" active-class="active-link">
                             <i class="ri-chat-3-fill"></i>
-                            <span>Đoạn chat</span>
+                            <span>{{ $t('message.chat') }}</span>
                         </router-link>
                         <router-link to="/trang-chu/thong-bao" class="sidebar__link" active-class="active-link">
                             <i class="ri-notification-3-fill"></i>
-                            <span>Thông báo</span>
+                            <span>{{ $t('message.nofication') }}</span>
                         </router-link>
                     </div>
                 </div>
                 <div>
-                    <h3 class="sidebar__title">Cài đặt</h3>
+                    <h3 class="sidebar__title">{{ $t('message.setting') }}</h3>
                     <div class="sidebar__list">
                         <router-link to="/trang-chu/thong-tin" class="sidebar__link" active-class="active-link">
                             <i class="ri-user-3-fill"></i>
-                            <span>Thông tin cá nhân</span>
+                            <span>{{ $t('message.profile') }}</span>
                         </router-link>
                         <router-link to="/trang-chu/ung-dung" class="sidebar__link" active-class="active-link">
                             <i class="ri-apps-2-fill"></i>
-                            <span>Ứng dụng</span>
+                            <span>{{ $t('message.application') }}</span>
                         </router-link>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
             <div class="sidebar__actions">
                 <router-link to="/dang-xuat" class="sidebar__link">
                     <i class="ri-door-open-fill"></i>
-                    <span>Đăng xuất</span>
+                    <span>{{ $t('message.signout') }}</span>
                 </router-link>
             </div>
         </div>

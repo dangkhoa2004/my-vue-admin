@@ -1,7 +1,7 @@
 <template>
     <div class="link-login">
-        <h3>Đăng Nhập Bằng Liên Kết</h3>
-        <button @click="sendLoginLink">Gửi Liên Kết Đăng Nhập</button>
+        <h3>{{ $t('message.loginbylink') }}</h3>
+        <button @click="sendLoginLink">{{ $t('message.sendlink') }}</button>
     </div>
 </template>
 
@@ -10,7 +10,6 @@ export default {
     name: 'LinkLogin',
     methods: {
         sendLoginLink() {
-            // Giả lập việc gửi liên kết đăng nhập qua email hoặc SMS
             alert('Liên kết đăng nhập đã được gửi!');
         }
     }

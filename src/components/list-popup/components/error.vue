@@ -7,7 +7,7 @@
         </div>
         <div class="shadow move"></div>
         <div class="message">
-            <h1 class="alert">Thất bại !</h1>
+            <h1 class="alert">{{ $t('message.fail') }} !</h1>
         </div>
     </div>
 </template>
