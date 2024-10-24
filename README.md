@@ -66,7 +66,7 @@ src/
 
 ## 🎨 Tùy chỉnh giao diện
 
-Bạn có thể dễ dàng thay đổi giao diện theo phong cách của **ivibo** bằng cách cập nhật tệp SCSS trong thư mục `src/assets/scss/`. Dự án cũng hỗ trợ **Dark Mode** để phù hợp với trải nghiệm người dùng.
+Bạn có thể dễ dàng thay đổi giao diện theo phong cách của **ivibo** bằng cách cập nhật tệp SCSS trong thư mục `src/style/...`. Dự án cũng hỗ trợ **Dark Mode** để phù hợp với trải nghiệm người dùng.
 
 ## 📝 Đóng góp
 
