@@ -1,13 +1,7 @@
 <template>
     <div id="success-box">
-        <div class="face">
-            <div class="eye"></div>
-            <div class="eye right"></div>
-            <div class="mouth happy"></div>
-        </div>
-        <div class="shadow scale"></div>
         <div class="message">
-            <h1 class="alert">{{ $t('message.done') }} !</h1>
+            <h1 class="alert">{{ $t('message.done') }}</h1>
         </div>
     </div>
 </template>

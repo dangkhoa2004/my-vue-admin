@@ -6,11 +6,11 @@
         </div>
         <div class="setting-for">
             <h3>{{ $t('message.statussetting') }}:</h3>
-            <listPopup />
+            <CssManager />
         </div>
         <div class="setting-for">
             <h3>{{ $t('message.statussetting') }}:</h3>
-            <CssManager />
+            <listPopup />
         </div>
     </div>
 </template>

@@ -3,6 +3,7 @@
     height: 766px;
     box-shadow: 2px 0 24px var(--shadow-color);
     border-radius: 15px;
+    z-index: 0;
 }
 
 .checkin-button {
