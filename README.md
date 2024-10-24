@@ -33,6 +33,7 @@ Clone dự án từ GitHub:
 git clone https://github.com/dangkhoa2004/my-vue-admin.git
 cd vue-pure-admin-ivibo
 npm install
+npm install axios
 ```
 
 Chạy dự án:

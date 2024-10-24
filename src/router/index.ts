@@ -1,9 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 import homeRoutes from "./modules/home";  // Không cần spread ở đây
-import userRoutes from "./modules/user";
-import adminRoutes from "./modules/admin";
-import reportsRoutes from "./modules/reports";
-import settingsRoutes from "./modules/settings";
 import authRoutes from "./modules/login";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
@@ -16,10 +12,6 @@ const routes = [
   },
   ...authRoutes,
   ...homeRoutes,
-  ...userRoutes,
-  ...adminRoutes,
-  ...reportsRoutes,
-  ...settingsRoutes,
 ];
 
 const router = createRouter({

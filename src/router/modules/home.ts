@@ -6,7 +6,11 @@ const homeRoutes: RouteRecordRaw[] = [
     path: "/trang-chu",
     name: "trang-chu",
     component: Layout,
-    redirect: "/trang-chu/home",
+    meta: {
+      title: 'Dashboard',
+      requiresAuth: true,
+      roles: ['admin'],
+    },
     children: [
       {
         path: "",
