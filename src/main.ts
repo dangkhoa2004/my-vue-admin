@@ -1,11 +1,13 @@
 import { createApp, type Directive } from 'vue';
 import App from './App.vue';
 import router from './router';
-import './style/style.css';
-import './style/breakpoint.css';
+
+import './style/main.css';
+
 import 'leaflet/dist/leaflet.css';
+
 import { i18nPlugin } from './plugins/i18nPlugin';
-import * as directives from '@/directives'; // Import tất cả directives
+import * as directives from '@/directives';
 
 const app = createApp(App);
 
