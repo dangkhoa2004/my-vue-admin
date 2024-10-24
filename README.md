@@ -33,7 +33,15 @@ Clone dự án từ GitHub:
 git clone https://github.com/dangkhoa2004/my-vue-admin.git
 cd vue-pure-admin-ivibo
 npm install
-npm install axios
+npm install axios@^1.7.7
+npm install js-cookie@^3.0.5
+npm install leaflet@^1.9.4
+npm install nprogress@^0.2.0
+npm install vue@^3.5.10
+npm install vue-i18n@^10.0.4
+npm install vue-router@^4.4.5
+npm install vue3-leaflet@^1.0.50
+npm install vuex@^4.1.0
 ```
 
 Chạy dự án:
