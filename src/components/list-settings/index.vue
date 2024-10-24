@@ -32,6 +32,7 @@ export default {
             this.$i18n.locale = lang;
             localStorage.setItem('language', lang);
             this.currentLanguage = lang;
+            console.log('Đã thay đổi ngôn ngữ')
         },
     },
 };

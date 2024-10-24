@@ -32,5 +32,6 @@ export default {
     loginbylink: "Signin with link",
     sendlink: "Send a signin link",
     signin_qrcode: "Signin with QR Code",
+    performance: "Performance",
   },
 };
