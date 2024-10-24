@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## 🌟 Giới thiệu
-
+---
 **Vue Pure Admin** là một dự án quản trị mạnh mẽ, được xây dựng trên nền tảng **Vue.js 3**. Với kiến trúc dễ tùy biến, giao diện người dùng tinh gọn và thân thiện, nó được thiết kế để phù hợp với mọi loại ứng dụng quản trị. Dự án này nhắm đến việc cung cấp một nền tảng quản lý cho **ivibo** – hệ thống quản lý và điều hành tối ưu hóa cho doanh nghiệp của bạn.
 
 ## 🎯 Tính năng nổi bật
