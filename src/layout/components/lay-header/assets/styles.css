@@ -1,0 +1,33 @@
+/*=============== HEADER ===============*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-fixed);
+  margin: .75rem;
+}
+
+.header__container {
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--body-color);
+  box-shadow: 0 2px 24px var(--shadow-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1.5rem;
+  border-radius: 1rem;
+  transition: background-color .4s;
+}
+
+.header__toggle {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.header__toggle:hover {
+  color: #FF8C27;
+}

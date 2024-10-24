@@ -1,0 +1,112 @@
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+    :root {
+        --normal-font-size: 1rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 360px) {
+    .header__container {
+        padding-inline: 1rem;
+    }
+
+    .sidebar {
+        width: max-content;
+    }
+
+    .sidebar__info,
+    .sidebar__link span {
+        display: none;
+    }
+
+    .sidebar__user,
+    .sidebar__list,
+    .sidebar__actions {
+        justify-content: center;
+    }
+
+    .sidebar__user,
+    .sidebar__link {
+        grid-template-columns: max-content;
+    }
+
+    .sidebar__user {
+        padding: 0;
+    }
+
+    .sidebar__link {
+        padding-inline: 2rem;
+    }
+
+    .sidebar__title {
+        padding-inline: .5rem;
+        margin-inline: auto;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px) {
+    .header {
+        margin: 1rem;
+        padding-left: 340px;
+        transition: padding .4s;
+    }
+
+    .header__container {
+        height: calc(var(--header-height) + 2rem);
+        padding-inline: 2rem;
+    }
+
+    .header__logo {
+        order: 1;
+    }
+
+    .sidebar {
+        left: 0;
+        width: 316px;
+        margin: 1rem;
+    }
+
+    .sidebar__info,
+    .sidebar__link span {
+        transition: opacity .4s;
+    }
+
+    .sidebar__user,
+    .sidebar__title {
+        transition: padding .4s;
+    }
+
+    /* Reduce sidebar */
+    .show-sidebar {
+        width: 90px;
+    }
+
+    .show-sidebar .sidebar__user {
+        padding-left: 1.25rem;
+    }
+
+    .show-sidebar .sidebar__title {
+        padding-left: 0;
+        margin-inline: auto;
+    }
+
+    .show-sidebar .sidebar__info,
+    .show-sidebar .sidebar__link span {
+        opacity: 0;
+    }
+
+    .main {
+        padding-left: 334px;
+        padding-top: 8rem;
+        transition: padding .4s;
+    }
+
+    /* Add padding left */
+    .left-pd {
+        padding-left: 114px;
+    }
+}
