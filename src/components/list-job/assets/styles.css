@@ -91,7 +91,7 @@
 }
 
 .jobs-priority.jobs-low {
-    color: var(--first-color);
+    color: rgb(197, 197, 44);
 }
 
 .jobs-priority.jobs-high {

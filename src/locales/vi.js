@@ -32,5 +32,6 @@ export default {
     loginbylink: "Đăng nhập bằng liên kết",
     sendlink: "Gửi liên kết đăng nhập",
     signin_qrcode: "Đăng nhập bằng QR Code",
+    performance: "Hiệu năng",
   },
 };
