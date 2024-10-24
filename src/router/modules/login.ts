@@ -1,4 +1,5 @@
 import { RouteRecordRaw } from "vue-router";
+import { logout } from "@/utils/auth";
 
 const authRoutes: RouteRecordRaw[] = [
   {
@@ -10,7 +11,7 @@ const authRoutes: RouteRecordRaw[] = [
     path: '/dang-xuat',
     name: 'Logout',
     beforeEnter: (to, _from, next) => {
-      localStorage.removeItem('authToken');
+      logout();
       next('/dang-nhap');
     },
     component: () => import('@/views/login/index.vue'),

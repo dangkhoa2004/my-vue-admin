@@ -1,9 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
-import homeRoutes from "./modules/home";  // Không cần spread ở đây
+import homeRoutes from "./modules/home";
 import authRoutes from "./modules/login";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 import { storageLocal } from "@/utils/auth";
+import { isLoggedIn } from "@/utils/auth"; // Nhớ import hàm này
 
 const routes = [
   {
@@ -27,14 +28,16 @@ router.beforeEach((to, from, next) => {
     document.documentElement.style.setProperty('--first-color', savedColor);
   }
 
+  const requiresAuth = to.meta.requiresAuth;
   const userInfo = storageLocal().getItem("userInfo");
-  if (!userInfo && to.path !== "/dang-nhap") {
-    next({ path: "/dang-nhap" });
+
+  // Kiểm tra nếu route yêu cầu đăng nhập
+  if (requiresAuth && !isLoggedIn()) {
+    next({ path: "/dang-nhap" }); // Chuyển hướng đến trang đăng nhập
   } else {
     next();
   }
 });
-
 
 router.afterEach(() => {
   NProgress.done();

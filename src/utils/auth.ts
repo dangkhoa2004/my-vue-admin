@@ -12,4 +12,12 @@ export function setToken(token: string): void {
 export function storageLocal() {
   return window.localStorage;
 }
+export function logout(): void {
+  localStorage.removeItem(TOKEN_KEY);
+  localStorage.removeItem(USER_INFO_KEY);
+}
 
+export function isLoggedIn(): boolean {
+  const token = getToken();
+  return token !== null;
+}
