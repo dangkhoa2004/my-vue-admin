@@ -1,10 +1,10 @@
 <template>
     <div class="language-switcher">
         <div class="button-container">
-            <button class="chang-language-btn" @click="changeLanguage('vi')"
+            <button class="chang-language-btn" @click="setLanguage('vi')"
                 :class="{ active: currentLanguage === 'vi' }">{{ $t('message.vi_lang') }}
             </button>
-            <button class="chang-language-btn" @click="changeLanguage('en')"
+            <button class="chang-language-btn" @click="setLanguage('en')"
                 :class="{ active: currentLanguage === 'en' }">{{ $t('message.en_lang') }}
             </button>
         </div>
@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import { changeLanguage } from '@/config/changLanguage';
+
 export default {
     data() {
         return {
@@ -28,11 +30,9 @@ export default {
         }
     },
     methods: {
-        changeLanguage(lang) {
-            this.$i18n.locale = lang;
-            localStorage.setItem('language', lang);
+        setLanguage(lang) {
+            changeLanguage(this.$i18n, lang);
             this.currentLanguage = lang;
-            console.log('Đã thay đổi ngôn ngữ')
         },
     },
 };
