@@ -1,7 +1,8 @@
 #map {
-    border-radius: 1rem;
     width: 100%;
     height: 766px;
+    box-shadow: 2px 0 24px var(--shadow-color);
+    border-radius: 15px;
 }
 
 .checkin-button {

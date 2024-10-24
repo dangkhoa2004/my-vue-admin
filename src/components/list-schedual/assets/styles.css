@@ -1,3 +1,10 @@
+.jobs-container {
+    box-shadow: 2px 0 24px var(--shadow-color);
+    padding: 30px;
+    border-radius: 15px;
+    min-height: 766px;
+}
+
 .jobs-header {
     display: flex;
     justify-content: space-between;
