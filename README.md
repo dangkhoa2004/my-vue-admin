@@ -23,14 +23,14 @@
 - **Vue Router** - định tuyến cho ứng dụng
 - **Pinia** - quản lý trạng thái dễ dàng
 - **Axios** - kết nối và xử lý API
-- **SCSS** - tạo giao diện đẹp mắt và dễ dàng tùy biến
+- **CSS** - tạo giao diện đẹp mắt và dễ dàng tùy biến
 
 ## 📦 Cài đặt
 
 Clone dự án từ GitHub:
 
 ```bash
-git clone https://github.com/your-username/vue-pure-admin-ivibo.git
+git clone https://github.com/dangkhoa2004/my-vue-admin.git
 cd vue-pure-admin-ivibo
 npm install
 ```
@@ -41,8 +41,6 @@ Chạy dự án:
 npm run serve
 ```
 
-Dự án sẽ chạy tại `http://localhost:8080`.
-
 ## 🔐 Xác thực và phân quyền
 
 Ứng dụng có các chức năng bảo mật thông qua xác thực người dùng và phân quyền dựa trên vai trò. Các trang quản trị như Admin, Settings và Reports được bảo vệ bằng `meta.requiresAuth` và kiểm tra quyền hạn qua `beforeEnter` để đảm bảo chỉ những người có quyền mới được truy cập.
@@ -51,13 +49,18 @@ Dự án sẽ chạy tại `http://localhost:8080`.
 
 ```bash
 src/
+├── api/            # Các thành phần quản lý nạp api
 ├── assets/         # Các tài nguyên như hình ảnh, font
 ├── components/     # Các thành phần tái sử dụng
-├── layouts/        # Các layout chính của ứng dụng
-├── pages/          # Các trang như Admin, Settings, Reports
+├── config/         # Các thành phần cấu hình cho dự án
+├── directives/     # Các thành phần cấu hình chỉ thị UI
+├── layout/         # Các layout chính của ứng dụng
+├── plugins/        # Các tiện ích, cấu hình khác cho dự án
 ├── router/         # Định tuyến của ứng dụng
 ├── store/          # Quản lý trạng thái với Pinia
+├── style/          # Quản lý css trọng điểm dự án
 ├── utils/          # Các hàm tiện ích (utility functions)
+├── views/          # Các trang hiển thị chính
 └── App.vue         # Thành phần root của ứng dụng
 ```
 
