@@ -1,5 +1,5 @@
 <template>
-  <div id="container">
+  <div id="container" style="margin-top: 20px;">
     <success />
     <error />
   </div>

@@ -14,19 +14,22 @@
     margin: 5px;
     border: none;
     border-radius: 5px;
-    background-color: #f5cfad;
+    background-color: var(--first-color);
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.3s ease;
-}
-
-.chang-language-btn:hover {
-    background-color: #FF8C27;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.3s ease, opacity 0.3s;
+    opacity: 0.5;
 }
 
 .active {
-    background-color: #FF8C27;
+    background-color: var(--first-color);
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+
+.chang-language-btn:hover {
+    background-color: var(--first-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

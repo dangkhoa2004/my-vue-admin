@@ -29,5 +29,5 @@
 }
 
 .header__toggle:hover {
-  color: #FF8C27;
+  color: var(--first-color);
 }

@@ -19,7 +19,7 @@ export default defineComponent({
 
             const customIcon = L.divIcon({
                 className: 'custom-icon',
-                html: '<i class="fas fa-map-marker-alt" style="font-size: 30px; color: red;"></i>',
+                html: '<i class="fas fa-map-marker-alt" style="font-size: 30px; color: var(--first-color);"></i>',
                 iconSize: [30, 30],
                 iconAnchor: [15, 30],
                 popupAnchor: [0, -30],

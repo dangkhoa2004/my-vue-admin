@@ -46,7 +46,7 @@
 
 .message-list-chat-notification {
     font-size: 18px;
-    background-color: #FF8C27;
+    background-color: var(--first-color);
     color: white;
     border-radius: 50%;
     height: 30px;

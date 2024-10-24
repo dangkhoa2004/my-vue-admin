@@ -21,6 +21,12 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   NProgress.start();
+
+  const savedColor = localStorage.getItem('firstColor');
+  if (savedColor) {
+    document.documentElement.style.setProperty('--first-color', savedColor);
+  }
+
   const userInfo = storageLocal().getItem("userInfo");
   if (!userInfo && to.path !== "/dang-nhap") {
     next({ path: "/dang-nhap" });
@@ -28,6 +34,7 @@ router.beforeEach((to, from, next) => {
     next();
   }
 });
+
 
 router.afterEach(() => {
   NProgress.done();

@@ -1,24 +1,29 @@
 <template>
     <div class="all-settings">
-        <div class="setting-for-infomation">
+        <div class="setting-for">
             <h3>{{ $t('message.appsetting') }}:</h3>
             <listSetting />
         </div>
-        <div class="setting-for-status">
+        <div class="setting-for">
             <h3>{{ $t('message.statussetting') }}:</h3>
             <listPopup />
+        </div>
+        <div class="setting-for">
+            <h3>{{ $t('message.statussetting') }}:</h3>
+            <CssManager />
         </div>
     </div>
 </template>
 
 <script lang="ts">
+import CssManager from '../list-element/index.vue';
 import listPopup from '../list-popup/index.vue';
 import listSetting from '../list-settings/index.vue';
 
 export default {
     name: "ChatApp",
     components: {
-        listPopup, listSetting
+        listPopup, listSetting, CssManager
     }
 };
 </script>

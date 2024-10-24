@@ -9,7 +9,7 @@
     bottom: 10%;
     left: 58%;
     transform: translateX(-50%);
-    background-color: orange;
+    background-color: var(--first-color);
     color: white;
     border: none;
     padding: 10px 20px;

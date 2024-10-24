@@ -56,7 +56,7 @@ form {
 
 button {
     padding: 10px 20px;
-    background-color: #FF8C27;
+    background-color: var(--first-color);
     color: white;
     border: none;
     border-radius: 4px;
@@ -65,7 +65,7 @@ button {
 }
 
 button:hover {
-    background-color: #FF8C27;
+    background-color: var(--first-color);
 }
 
 /* error */
@@ -133,7 +133,7 @@ button:hover {
 }
 
 .link-login button {
-    background-color: #FF8C27;
+    background-color: var(--first-color);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -143,5 +143,5 @@ button:hover {
 }
 
 .link-login button:hover {
-    background-color: #FF8C27;
+    background-color: var(--first-color);
 }
